@@ -2,9 +2,7 @@
  Group Frontend Project: HTML, SASS, Bootstrap
 
 
-
 <h2> REQUIRED PAGES <h2>
-
 
 <h3> TOM:  </h3>
 <ul> 
