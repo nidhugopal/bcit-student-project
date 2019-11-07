@@ -1,0 +1,111 @@
+@import "mixins";
+
+header{
+    background-color: #174e70;
+    color:#ffffff;
+    min-height: 70px;    
+    border-bottom: solid #e8491d 1px;
+    overflow: hidden;
+    margin-bottom: 0;
+
+    .container{
+
+        display:flex;
+        justify-content: space-between;
+        
+        //heading
+        h1{
+            padding-left: 20px;
+            flex:2;
+        }
+    
+        //hamburger button
+            
+        .nav-button {
+            display:none;
+            font-size: 2.3em;
+            background-color: $nav-color-blue;
+            border: none;
+            color: white;
+            height: 50px;
+            line-height: 1;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:25px;
+            margin-right: 25px;
+            cursor: pointer;
+            display: none;
+
+            @include lg{
+                display: block;
+            }
+                .sr-only {
+                    position: absolute;
+                    width: 1px;
+                    height: 1px;
+                    padding: 0;
+                    margin: -1px;
+                    overflow: hidden;
+                    clip: rect(0,0,0,0);
+                    border: 0;
+                }
+                
+                .hamburger-icon {
+                display: block;
+                height: 40px;
+                }
+            }
+
+        //navigation menu items
+        nav{ 
+            display:inline-block;
+            width:auto;
+
+            @include lg{
+                display: none;            
+            }
+            
+            
+    
+            ul{
+                margin-top: 30px;
+             
+    
+                li{
+                    list-style: none;
+                    display: inline;
+                }
+                
+                a{
+                    text-decoration: none;
+                    padding: 30px;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    color: $font-color-white;
+                    cursor: pointer;
+    
+                    &:hover{
+                        color: $font-hover-grey;
+                    }
+                }
+    
+                
+                }
+
+                &.show{
+                    display: block;
+                    width:100%;
+                }
+            }      
+    }
+    
+    }
+
+
+header .highlight, header .current a{
+    color:$font-highlight-orange;
+    font-weight: bold;
+}
+

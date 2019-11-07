@@ -1,0 +1,16 @@
+$font-color-white:#ffffff;
+$background-color-grey:#f4f4f4;
+$font-hover-grey: rgb(138, 131, 131);
+$font-highlight-orange: #e8491d;
+$nav-color-blue: #174e70;
+
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: $background-color-grey;
+    font-size:16px ;
+}
+

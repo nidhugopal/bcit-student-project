@@ -1,0 +1,73 @@
+@import "mixin";
+@import "variables";
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+.student-head{
+    text-transform: uppercase;
+    color:$welcome-blue;
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.student{
+    ul{
+
+        li{
+            
+            img{
+                margin:0px 0px 0px 0x;
+                position: static;
+        }
+        }
+   
+}
+}
+body{
+    
+    background:url(../images/students-tabsize.jpg);
+    background-repeat: repeat;
+    object-fit: cover;
+    
+
+}
+.main-container{
+    @include centering-div-margin;
+    max-width: 1400px;
+    width:75%;
+    background-color: white;
+
+    .students-grid-container{
+        @include centering-div-margin;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 10px 10px;
+        margin:0;
+        padding: 10px 30px 20px;
+        
+        
+        .student{
+            margin:0;
+            padding:0;
+            text-align: center;
+            div > ul > li:last-child{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: none;
+                align-self: center;
+            }
+        }
+    
+    }
+
+}
+

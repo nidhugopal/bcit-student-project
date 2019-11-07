@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  font-size: 16px; }
+
+header {
+  background-color: #174e70;
+  color: #ffffff;
+  min-height: 70px;
+  border-bottom: solid #e8491d 1px;
+  overflow: hidden;
+  margin-bottom: 0; }
+  header .container {
+    display: flex;
+    justify-content: space-between; }
+    header .container h1 {
+      padding-left: 20px;
+      flex: 2; }
+    header .container .nav-button {
+      display: none;
+      font-size: 2.3em;
+      background-color: #174e70;
+      border: none;
+      color: white;
+      height: 50px;
+      line-height: 1;
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 25px;
+      margin-right: 25px;
+      cursor: pointer;
+      display: none; }
+      @media (max-width: 1024px) {
+        header .container .nav-button {
+          display: block; } }
+      header .container .nav-button .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0; }
+      header .container .nav-button .hamburger-icon {
+        display: block;
+        height: 40px; }
+    header .container nav {
+      display: inline-block;
+      width: auto; }
+      @media (max-width: 1024px) {
+        header .container nav {
+          display: none; } }
+      header .container nav ul {
+        margin-top: 30px; }
+        header .container nav ul li {
+          list-style: none;
+          display: inline; }
+        header .container nav ul a {
+          text-decoration: none;
+          padding: 30px;
+          font-size: 20px;
+          text-transform: uppercase;
+          color: #ffffff;
+          cursor: pointer; }
+          header .container nav ul a:hover {
+            color: #8a8383; }
+      header .container nav.show {
+        display: block;
+        width: 100%; }
+
+header .highlight, header .current a {
+  color: #e8491d;
+  font-weight: bold; }
+
+.showcase-area {
+  min-height: 300px;
+  background-image: url(../images/annie-spratt-1450.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  margin-top: 0;
+  background-position: center;
+  opacity: 0.9; }
+  .showcase-area .container {
+    width: 80%;
+    margin: auto;
+    color: #ffffff;
+    text-align: center; }
+  .showcase-area h1 {
+    margin: 0;
+    padding-top: 40px;
+    font-size: 1.7rem; }
+  .showcase-area .sub-h1 {
+    margin: 0;
+    padding: 10px 0px 25px 0px;
+    font-size: 20px;
+    font-size: 1.5rem; }
+  .showcase-area p {
+    margin: 0; }
+  .showcase-area #intro {
+    margin: auto;
+    width: 70%; }
+
+.navigations {
+  background-color: #174e70;
+  margin: 0;
+  padding: 0; }
+  .navigations .container {
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+    height: 2rem; }
+    .navigations .container .inner-container {
+      float: right;
+      width: 10%;
+      background-color: #e8491d; }
+      .navigations .container .inner-container span {
+        padding-left: 7px; }
+        .navigations .container .inner-container span img {
+          margin: 0 auto;
+          padding-top: 1px; }
+
+.boxes {
+  margin: 0;
+  padding: 0; }
+  .boxes .container {
+    margin: auto;
+    width: 85%;
+    padding-top: 0px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    min-height: 90px; }
+    .boxes .container .box {
+      flex: 1;
+      background-color: #f4f4f4; }
+      .boxes .container .box p {
+        margin: 51px 30px; }
+        .boxes .container .box p a {
+          font-size: 1rem;
+          text-align: center;
+          line-height: 1.5rem;
+          color: black;
+          text-transform: uppercase;
+          text-decoration: none;
+          font-weight: bold; }
+          .boxes .container .box p a:hover {
+            color: #e8491d; }
+
+footer {
+  background-color: #e8491d;
+  color: #ffffff;
+  margin: 0;
+  height: 6vh; }
+  footer p {
+    text-align: center;
+    font-size: 0.75rem;
+    padding-top: 5px; }
+
+/*# sourceMappingURL=styles.css.map */

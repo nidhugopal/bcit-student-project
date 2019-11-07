@@ -1,0 +1,32 @@
+$screen-sm-max:480px;
+$screen-md-max:768px;
+$screen-lg-max:1024px;
+$screen-xl-max:1440px;
+
+//Media query for larger mobiles
+@mixin sm {
+    @media (max-width: #{$screen-sm-max}){
+        @content;
+    }
+}
+
+// Media Query for Tablets and larger
+@mixin md {
+    @media (max-width: #{$screen-md-max}){
+        @content;
+    }
+}
+
+// Media Query for Small Laptops
+@mixin lg {
+    @media (max-width: #{$screen-lg-max}){
+        @content;
+    }
+}
+
+// Media Query for Larger Laptops
+@mixin xl {
+    @media (max-width: #{$screen-xl-max}){
+        @content;
+    }
+}
