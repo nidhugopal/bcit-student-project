@@ -2,8 +2,13 @@ footer{
     background-color: $font-highlight-orange;
     color:$font-color-white;
     margin:0;
-    height:6vh;
-    
+    width: 100%;
+    height: 6vh;
+    position: absolute;
+    bottom: 0;
+    margin-left: -61px;
+
+
     p{
         text-align: center;
         font-size: 0.75rem;
