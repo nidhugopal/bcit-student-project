@@ -1,0 +1,19 @@
+.card-box{
+    margin-top: 4%;
+    margin-left: 6%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    h2{
+        padding-bottom: 4%;
+    }
+
+    .card-body{
+        margin-bottom: 20%;
+        background-color: #dae0fb;
+        padding: 8%;
+        border-radius: 8%;
+        width: 340px;
+        height: 230px;;
+    }
+}
