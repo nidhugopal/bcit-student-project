@@ -2118,6 +2118,7 @@ let arr = [
 
   for(let i = 0; i < arr.length; i++ ){
     let subArr = {}
+    let sub2 = {}
 
     let item = arr[i]
     let sub = item.UnnamedField5.slice(-2);
@@ -2161,7 +2162,10 @@ let arr = [
 
     var d = new Date(subY , subMon,  parseInt(sub))
     subArr.start = d; 
-    subArr.title = item.UnnamedField6
+    subArr.title = " Course: " + item.UnnamedField6 
+    sub2.start = d
+    sub2.title = " Instructor: " + item.UnnamedField7
+    event.push(sub2)
     event.push(subArr)
   }
 
@@ -2176,7 +2180,11 @@ let arr = [
       right: 'dayGridMonth,listYear'
     },
     displayEventTime: false,
-    events: event
+    eventSources: [{
+    events: event,
+    color: 'blue',     
+    textColor: 'white' 
+          }]
             });
           calendar.render();
         });
