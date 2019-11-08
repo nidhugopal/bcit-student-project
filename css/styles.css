@@ -323,7 +323,11 @@ body {
 }
 
 .contact-only-form {
-  margin: 4%;
+  margin: 3%;
+}
+
+.foot-wrap {
+  margin-left: -3%;
 }
 
 .card-box {
