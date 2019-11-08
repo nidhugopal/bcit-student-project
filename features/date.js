@@ -1,4 +1,4 @@
-[
+let arr = [
     {
       "Software_Systems_Developer_Program_2019_20": "",
       "UnnamedField1": "",
@@ -2112,3 +2112,46 @@
       "UnnamedField8": ""
     }
   ]
+
+
+  event = []
+
+  for(let i = 0; i < arr.length; i++ ){
+    let subArr = {}
+
+    let item = arr[i]
+    let sub = item.UnnamedField5.slice(-2);
+    let subMon = 8
+    switch(item.UnnamedField5.slice(0,2)) {
+  case "Nov":
+  subMon = 09
+    break;
+  case "Dec":
+  subMon = 10
+    break;
+  default:
+  subMon = 8
+}
+
+
+    var d = new Date(2019 , subMon,  parseInt(sub))
+    subArr.start = d; 
+    subArr.title = item.UnnamedField6
+    event.push(subArr)
+  }
+
+         document.addEventListener('DOMContentLoaded', function() {
+          var calendarEl = document.getElementById('calendar');
+
+          var calendar = new FullCalendar.Calendar(calendarEl, {
+          plugins: ['list', 'dayGrid', 'timeGrid' ],
+          header: {
+      left: 'prev,next today',
+      center: 'title',
+      right: 'dayGridMonth,listYear'
+    },
+    displayEventTime: false,
+    events: event
+            });
+          calendar.render();
+        });
