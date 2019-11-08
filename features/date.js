@@ -2113,7 +2113,6 @@ let arr = [
     }
   ]
 
-
   event = []
 
   for(let i = 0; i < arr.length; i++ ){
@@ -2159,7 +2158,6 @@ let arr = [
   break;
 }
 
-
     var d = new Date(subY , subMon,  parseInt(sub))
     subArr.start = d; 
     subArr.title = " Course: " + item.UnnamedField6 
@@ -2168,7 +2166,7 @@ let arr = [
     event.push(sub2)
     event.push(subArr)
   }
-
+  
          document.addEventListener('DOMContentLoaded', function() {
           var calendarEl = document.getElementById('calendar');
 
