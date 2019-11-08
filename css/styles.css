@@ -368,4 +368,9 @@ body {
 .meta .container .collapse {
   word-wrap: break-word;
 }
+
+.c-box {
+  margin: 4%;
+  padding-bottom: 8%;
+}
 /*# sourceMappingURL=styles.css.map */
