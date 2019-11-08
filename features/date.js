@@ -2121,20 +2121,45 @@ let arr = [
 
     let item = arr[i]
     let sub = item.UnnamedField5.slice(-2);
-    let subMon = 8
-    switch(item.UnnamedField5.slice(0,2)) {
+    let subMon = null
+    let subY = 2019
+    switch(item.UnnamedField5.slice(0,3)) {
+      case "Sep":
+      subMon = 8
+      break;
+      case "Oct":
+      subMon = 9
+      break;
   case "Nov":
-  subMon = 09
-    break;
-  case "Dec":
   subMon = 10
     break;
-  default:
-  subMon = 8
+  case "Dec":
+  subMon = 11
+  break;
+  case "Jan":
+  subMon = 0
+  subY = 2020
+  break;
+  case "Feb":
+  subMon = 1
+  subY = 2020
+  break;
+  case "Mar":
+  subMon = 2
+  subY = 2020
+  break;
+  case "Apr":
+  subMon = 3
+  subY = 2020
+  break;
+  case "May":
+  subMon = 4
+  subY = 2020
+  break;
 }
 
 
-    var d = new Date(2019 , subMon,  parseInt(sub))
+    var d = new Date(subY , subMon,  parseInt(sub))
     subArr.start = d; 
     subArr.title = item.UnnamedField6
     event.push(subArr)
