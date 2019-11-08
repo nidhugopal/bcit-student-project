@@ -1,0 +1,16 @@
+.meta{
+    display: grid;
+    margin: 6%;
+    grid-template-columns: 1fr 1fr;
+
+    .container{
+        width: 50%;
+        margin-bottom: 8%;
+        h2{
+            padding-bottom: 2%;
+        }
+        .collapse{
+            word-wrap: break-word;
+        }
+    }
+}

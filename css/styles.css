@@ -6,6 +6,8 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #f4f4f4;
   font-size: 16px;
+  position: relative;
+  min-height: 100vh;
 }
 
 header {
@@ -236,12 +238,13 @@ header .highlight, header .current a {
 footer {
   background-color: #e8491d;
   color: #ffffff;
-  margin: 0;
-  width: 104%;
-  height: 6vh;
+  background-color: #e8491d;
+  color: #ffffff;
   position: absolute;
   bottom: 0;
-  margin-left: -61px;
+  width: 100%;
+  margin-bottom: -4%;
+  height: 9.5rem;
 }
 
 footer p {
@@ -343,5 +346,26 @@ body {
   border-radius: 8%;
   width: 340px;
   height: 230px;
+}
+
+.meta {
+  display: -ms-grid;
+  display: grid;
+  margin: 6%;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.meta .container {
+  width: 50%;
+  margin-bottom: 8%;
+}
+
+.meta .container h2 {
+  padding-bottom: 2%;
+}
+
+.meta .container .collapse {
+  word-wrap: break-word;
 }
 /*# sourceMappingURL=styles.css.map */
