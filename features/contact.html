@@ -90,13 +90,12 @@
     </footer>
   </div>
 
-
 <script>
 document.addEventListener('DOMContentLoaded', function() {
         let form =  document.querySelector("form")
         form.addEventListener("submit", function(e){
         e.preventDefault();   
-        alert(`Thank you, ${ form.fName.value}  ${ form.lName.value}. We have received your information and will contact you shortly.`)
+        alert(`Thank you, ${form.fName.value} ${form.lName.value}. We have received your information and will contact you shortly.`)
 });
 }, false);
 </script>

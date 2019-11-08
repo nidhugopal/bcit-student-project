@@ -333,10 +333,52 @@ body {
 .card-box {
   margin-top: 4%;
   margin-left: 6%;
+  padding-bottom: 6%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 1499px) {
+  .card-box {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .card-box {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 828px) {
+  .card-box {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 748px) {
+  .card-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 6%;
+    margin-left: 0%;
+  }
 }
 
 .card-box h2 {
@@ -350,6 +392,20 @@ body {
   border-radius: 8%;
   width: 340px;
   height: 230px;
+}
+
+@media screen and (max-width: 828px) {
+  .card-box .card-body {
+    width: 308px;
+    height: 230px;
+  }
+}
+
+@media screen and (max-width: 748) {
+  .card-box .card-body {
+    width: 366px;
+    height: 233px;
+  }
 }
 
 .meta {
