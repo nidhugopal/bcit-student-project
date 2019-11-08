@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link href='../fullcalender/core/main.css' rel='stylesheet' />
     <link href='../fullcalender/daygrid/main.css' rel='stylesheet' />
+    <link href='../fullcalender/list/main.css' rel='stylesheet' />
+
     <title>Calender</title>
 </head>
 <body>
@@ -39,6 +41,7 @@
     </footer>
 
     <script src='../fullcalender/core/main.js'></script>
+    <script src='../fullcalender/list/main.js'></script>
     <script src='../fullcalender/daygrid/main.js'></script>
 
 
@@ -48,7 +51,12 @@
 
 
           var calendar = new FullCalendar.Calendar(calendarEl, {
-          plugins: [ 'dayGrid', 'timeGrid', 'list' ] 
+          plugins: ['list', 'dayGrid', 'timeGrid' ],
+          header: {
+      left: 'prev,next today',
+      center: 'title',
+      right: 'dayGridMonth,listYear'
+    }
             });
   
           calendar.render();
