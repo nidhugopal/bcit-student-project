@@ -1,5 +1,5 @@
-@import "mixin";
-@import "variables";
+// @import "mixin";
+// @import "variables";
 
 *{
     margin:0px;
@@ -12,7 +12,7 @@
 
 .student-head{
     text-transform: uppercase;
-    color:$welcome-blue;
+    // color:$welcome-blue;
     font-size: 3rem;
     text-align: center;
     letter-spacing: 3px;
@@ -40,13 +40,13 @@ body{
 
 }
 .main-container{
-    @include centering-div-margin;
+    // @include centering-div-margin;
     max-width: 1400px;
     width:75%;
     background-color: white;
 
     .students-grid-container{
-        @include centering-div-margin;
+        // @include centering-div-margin;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: auto;
