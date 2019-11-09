@@ -2114,6 +2114,7 @@ let arr = [
   ]
 
   event = []
+  
 
   for(let i = 0; i < arr.length; i++ ){
     let subArr = {}
