@@ -9,39 +9,75 @@
     <link href='../fullcalender/core/main.css' rel='stylesheet' />
     <link href='../fullcalender/daygrid/main.css' rel='stylesheet' />
     <link href='../fullcalender/list/main.css' rel='stylesheet' />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <title>Calender</title>
 </head>
 <body>
-        <header>
-                <div class="container">
-                    <div class="brand-name">
-                        <h1><span class="highlight">BCIT</span> SOFTWARE SYSTEM DEVELOPER</h1>
+     
+            <header>
+                    <div class="container">
+                        <div class="logo-bar">
+                            <img src="../images/bcit_logo.png" alt="logo">
+                            <p style="margin-left: 5%;">BRITISH COLUMBIA INSTITUTE OF TECHNOLOGY</p>
+                        </div>
+                        <div class="top-bar">
+                            <div class="brand-name">
+                                <h3><span class="highlight">SOFTWARE</span>  SYSTEM DEVELOPER</h3>
+                            </div>
+                            <button class="nav-button" id="nav-button">
+                                <span class="hamburger-icon">&#9776;</span>
+                                <span class="sr-only">Menu</span>
+                            </button>
+                            <nav id="nav-list">
+                                <ul>
+                                    <li class="current"><a href="#">Home</a></li>
+                                    <li><a href="./contact.html">About</a></li>
+                                    <li><a href="./course_summary.html">SSD Details</a></li>
+                                    <li><a href="../current-students.html">Current Students</a></li>
+                                    <li><a href="../prospective-students.html">Prospective Students</a></li>
+                                </ul>
+                            </nav>
                     </div>
-                    <button class="nav-button" id="nav-button">
-                        <span class="hamburger-icon">&#9776;</span>
-                        <span class="sr-only">Menu</span>
-                    </button>
-                    <nav>
-                        <ul>
-                            <li class="current"><a href="#">Home</a></li>
-                            <li><a href="../About.html">About</a></li>
-                            <li><a href="../ssd-details.html">SSD Details</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-
+            
+                    </div>
+                </header>
+    
+    
             <div class="c-box">  
                  <div id='calendar'></div>
             </div>
 
-    <footer>
-            <p>All rights reserved Copyright &copy; BCIT 2019</p>
-    </footer>
-
+   
+                <footer>
+                        <div class="find-us">
+                                <p>FIND US</p>
+                            </div>
+                    <div class="footer-class">
+                      <div class="address">
+                            <p class="footer-p">
+                                British Columbia Institute of Technology
+                                3700 Willingdon Avenue
+                                Burnaby, British Columbia
+                                Canada, V5G 3H2
+                            </p>
+                        </div>
+                        <div class="contact-nos">
+                            <p class="footer-p">Telephone: 604-434-5734</p>
+                            <p class="footer-p">Toll-free (Can/US): 1-866-434-1610</p>
+                        </div>  
+                    </div>
+                    
+                </footer>
+    
+    
     <script src='../fullcalender/core/main.js'></script>
     <script src='../fullcalender/list/main.js'></script>
     <script src='../fullcalender/daygrid/main.js'></script>
     <script src="date.js"> </script>
+   <script src="../js/script.js"></script>
 </body>
 </html>
