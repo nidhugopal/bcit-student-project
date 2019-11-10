@@ -37,10 +37,10 @@ $screen-xl-max:1440px;
 //responsiveness from mobile view up
 $screen-sm-min:362px;
 $screen-lm-min:480px;
-$screen-tp-min:600px;
-$screen-tl-min:768px;
-$screen-lg-min:990px;
-$screen-xl-min:1240px;
+$screen-tp-min:550px;
+$screen-tl-min:700px;
+$screen-lg-min:830px;
+$screen-xl-min:960px;
 
 
 //Media query for small mobiles
@@ -84,3 +84,5 @@ $screen-xl-min:1240px;
         @content;
     }
 }
+
+

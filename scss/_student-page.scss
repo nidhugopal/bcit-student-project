@@ -1,73 +1,81 @@
-// @import "mixin";
-// @import "variables";
-
-*{
-    margin:0px;
-    padding:0px;
-    box-sizing: border-box;
+html{
+    height: 100%;
+    body{
+    height:100%;
+    }
 }
-*, *:before, *:after{
-    box-sizing: inherit;
+.container{
+    margin:0;
+    padding:0;
 }
 
-.student-head{
-    text-transform: uppercase;
-    // color:$welcome-blue;
-    font-size: 3rem;
-    text-align: center;
-    letter-spacing: 3px;
+.student-cards{
+    margin:0;
+    margin-left: 40px;
+    
+}
+
+.top-bar{
+    margin:0;
+    padding:0;
+    h3{
+        font-size: 20px;
+       width:100%;
+    }
+}
+.logo-bar{
+    margin:0;
+    padding:0;
 }
 
 .student{
-    ul{
 
-        li{
             
-            img{
-                margin:0px 0px 0px 0x;
-                position: static;
-        }
-        }
-   
-}
-}
-body{
-    
-    background:url(../images/students-tabsize.jpg);
-    background-repeat: repeat;
-    object-fit: cover;
-    
-
-}
-.main-container{
-    // @include centering-div-margin;
-    max-width: 1400px;
-    width:75%;
-    background-color: white;
-
-    .students-grid-container{
-        // @include centering-div-margin;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: auto;
-        grid-gap: 10px 10px;
-        margin:0;
-        padding: 10px 30px 20px;
-        
-        
-        .student{
-            margin:0;
-            padding:0;
-            text-align: center;
-            div > ul > li:last-child{
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: none;
-                align-self: center;
-            }
-        }
-    
+    img{
+        margin:0px;
+        position: static;
     }
+}
+
+.student{
+    margin:0;
+    padding:0;
+    text-align: center;
+    margin:10px;
+    div > ul > li:last-child{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: none;
+        align-self: center;
+    }
+}
+
+.im{
+    color:$font-hover-grey;
+}
+footer{
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+    .footer-p{
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+
+.students-page-title{
+    max-width: 1024px;
 
 }
 
+.students-grd{
+       @include xl{
+    
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 5px;
+        box-sizing: border-box;
+        padding: 10px;
+       }   
+    
+}

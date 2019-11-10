@@ -23,7 +23,12 @@
         padding-top: 40px;
         font-size:1rem;
         text-transform: uppercase;
-
+        
+            @include tl{
+                    font-size: 1.5rem;
+                    letter-spacing: 2px;
+            }
+    
     }
 
     .sub-h1{
@@ -32,6 +37,12 @@
         font-size: 20px;
         font-size: 1rem;
         text-transform: uppercase;
+
+        @include tl{
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+       }
+
     }
 
     p{
@@ -69,6 +80,9 @@
             width:40%;
             margin-top: 3px;
             padding-left: 15px;
+            @include tp{
+               padding-left: 30px;
+            }
 
             .linkedin,.twitter,.facebook, .instagram{
              

@@ -1,0 +1,15 @@
+
+#apply-now-div{
+    display: none;
+
+    @include tg{
+        display: block;
+    }
+}
+
+main{
+    p{
+        font-size: small;
+    }
+}
+

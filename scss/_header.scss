@@ -32,9 +32,6 @@ header{
         }
     }
 }
-
-
-
  
 
 .top-bar {
@@ -45,15 +42,19 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	padding: 8px;
+
 	nav {
 		display: none;
 		a {
 			padding: 0 20px;
 			line-height: 50px;
-			font-size: 1em;
+			font-size: .85em;
 			display: block;
+			color:$font-color-white;
+			text-decoration: none;
+			text-transform: uppercase;
 			&:hover {
-				background-color:$font-hover-grey;
+				color:$font-hover-grey;
 			}
 			&:active {
 				background-color:$font-hover-grey;
