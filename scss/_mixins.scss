@@ -30,3 +30,57 @@ $screen-xl-max:1440px;
         @content;
     }
 }
+
+
+//---------------------------------------//
+
+//responsiveness from mobile view up
+$screen-sm-min:362px;
+$screen-lm-min:480px;
+$screen-tp-min:600px;
+$screen-tl-min:768px;
+$screen-lg-min:990px;
+$screen-xl-min:1240px;
+
+
+//Media query for small mobiles
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}){
+        @content;
+    }
+}
+
+//Media query for large mobiles
+@mixin lm {
+    @media (min-width: #{$screen-lm-min}){
+        @content;
+    }
+}
+
+//Media query for tablet portrait
+@mixin tp {
+    @media (min-width: #{$screen-tp-min}){
+        @content;
+    }
+}
+
+//Media query for tablet landscape
+@mixin tl {
+    @media (min-width: #{$screen-tl-min}){
+        @content;
+    }
+}
+
+//Media query for small laptops
+@mixin lg {
+    @media (min-width: #{$screen-lg-min}){
+        @content;
+    }
+}
+
+//Media query for large latops
+@mixin xl {
+    @media (min-width: #{$screen-xl-min}){
+        @content;
+    }
+}
