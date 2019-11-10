@@ -650,4 +650,60 @@ main p {
 .current-stud-main-body a li {
   list-style: none;
 }
+
+.for-margin {
+  margin: 0 30px;
+}
+
+@media (min-width: 550px) {
+  .for-margin {
+    margin: 0 60px;
+  }
+}
+
+@media (min-width: 700px) {
+  .for-margin {
+    margin: 0 90px;
+  }
+}
+
+@media (min-width: 830px) {
+  .for-margin {
+    margin: 0 200px;
+  }
+}
+
+.stud-hero-desktop {
+  display: none;
+}
+
+@media (min-width: 830px) {
+  .stud-hero-desktop {
+    display: block;
+  }
+}
+
+.stud-hero-small {
+  display: block;
+}
+
+@media (min-width: 830px) {
+  .stud-hero-small {
+    display: none;
+  }
+}
+
+.program-overview {
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+}
+
+.hero-current-stud-page {
+  position: relative;
+}
+
+.color-grey {
+  background-color: #8a8383;
+}
 /*# sourceMappingURL=styles.css.map */

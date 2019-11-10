@@ -12,3 +12,44 @@
     }
 
 }
+
+.for-margin{
+    margin:0 30px;
+    @include tp{
+        margin:0 60px;
+    }
+    @include tl{
+        margin:0 90px;
+    }
+    @include lg{
+        margin: 0 200px;
+    }
+}
+
+.stud-hero-desktop{
+    display: none;
+    @include lg{
+        display: block;
+    }
+}
+
+.stud-hero-small{
+    display: block;
+    @include lg{
+        display: none;
+    }
+}
+
+.program-overview{
+    position: absolute;
+    bottom: 40px;
+    left:30px;
+}
+
+.hero-current-stud-page{
+    position: relative;
+}
+
+.color-grey{
+    background-color:$font-hover-grey;
+}
