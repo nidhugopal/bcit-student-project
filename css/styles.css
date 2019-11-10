@@ -1,90 +1,653 @@
-/*
-Error: Undefined mixin 'tg'.
-        on line 5 of scss/_propsective-students.scss, in `tg'
-        from line 5 of scss/_propsective-students.scss
-        from line 16 of scss/styles.scss
+header {
+  background-color: #174e70;
+  color: #ffffff;
+  min-height: 70px;
+  border-bottom: solid #e8491d 1px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
 
-1: @import "global";
-2: @import "header";
-3: @import "showcase";
-4: @import "boxes";
-5: @import "footer";
-6: @import "mixins";
-7: @import "hamburger";
-8: @import "show";
-9: @import "student-page";
-10: @import "contact";
+header .logo-bar {
+  background-color: #ffffff;
+  height: 15vh;
+  position: relative;
+}
 
-Backtrace:
-scss/_propsective-students.scss:5:in `tg'
-scss/_propsective-students.scss:5
-scss/styles.scss:16
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:98:in `with_mixin'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `map'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'tg'.\A         on line 5 of scss/_propsective-students.scss, in `tg'\A         from line 5 of scss/_propsective-students.scss\A         from line 16 of scss/styles.scss\A \A 1: @import \"global\";\A 2: @import \"header\";\A 3: @import \"showcase\";\A 4: @import \"boxes\";\A 5: @import \"footer\";\A 6: @import \"mixins\";\A 7: @import \"hamburger\";\A 8: @import \"show\";\A 9: @import \"student-page\";\A 10: @import \"contact\";"; }
+header .logo-bar img {
+  width: 10vh;
+  position: absolute;
+  top: 10px;
+  left: 25px;
+}
+
+header .logo-bar p {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: small;
+  left: 100px;
+  color: #174e70;
+  top: 10px;
+}
+
+.top-bar {
+  background-color: #174e70;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px;
+}
+
+.top-bar nav {
+  display: none;
+}
+
+.top-bar nav a {
+  padding: 0 20px;
+  line-height: 50px;
+  font-size: .85em;
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.top-bar nav a:hover {
+  color: #8a8383;
+}
+
+.top-bar nav a:active {
+  background-color: #8a8383;
+}
+
+.top-bar nav a:focus {
+  background-color: #8a8383;
+}
+
+.top-bar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-button {
+  font-size: 2em;
+  background-color: #174e70;
+  border: none;
+  color: #ffffff;
+  display: block;
+  height: 50px;
+  line-height: 1;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  display: block;
+  height: 40px;
+}
+
+.show .top-bar nav {
+  width: 100%;
+  display: block;
+}
+
+header .highlight, header .current a {
+  color: #e8491d;
+  font-weight: bold;
+}
+
+.showcase-area {
+  position: relative;
+  min-height: 350px;
+  background-image: url(../images/annie-spratt-1450.jpg);
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 0;
+  background-position: center;
+}
+
+.showcase-area .container {
+  width: 90%;
+  margin: auto;
+  color: #ffffff;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+
+.showcase-area h1 {
+  margin: 0;
+  padding-top: 40px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+@media (min-width: 700px) {
+  .showcase-area h1 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+}
+
+.showcase-area .sub-h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+@media (min-width: 700px) {
+  .showcase-area .sub-h1 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+}
+
+.showcase-area p {
+  margin: 0;
+}
+
+.showcase-area #intro {
+  margin: auto;
+  width: 95%;
+}
+
+.navigations {
+  background-color: #8a8383;
+  border-top: 1px solid #e8491d;
+  margin: 0;
+  padding: 0;
+}
+
+.navigations .container {
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+  height: 2rem;
+}
+
+.navigations .container p {
+  color: #ffffff;
+  padding: 2px;
+  float: left;
+}
+
+.navigations .container .inner-container {
+  float: right;
+  width: 40%;
+  margin-top: 3px;
+  padding-left: 15px;
+}
+
+@media (min-width: 550px) {
+  .navigations .container .inner-container {
+    padding-left: 30px;
+  }
+}
+
+.navigations .container .inner-container .linkedin, .navigations .container .inner-container .twitter, .navigations .container .inner-container .facebook, .navigations .container .inner-container .instagram {
+  fill: #ffffff;
+  height: 8px;
+}
+
+.navigations .container .inner-container span {
+  padding-left: 7px;
+}
+
+.navigations .container .inner-container span img {
+  margin: 0 auto;
+  padding-top: 1px;
+}
+
+.boxes {
+  margin: 5px;
+  padding: 0;
+  min-height: 150vh;
+}
+
+@media (min-width: 550px) {
+  .boxes {
+    min-height: 170vh;
+  }
+}
+
+@media (min-width: 700px) {
+  .boxes {
+    min-height: 195vh;
+  }
+}
+
+@media (min-width: 830px) {
+  .boxes {
+    min-height: 215vh;
+  }
+}
+
+@media (min-width: 960px) {
+  .boxes {
+    min-height: 235vh;
+  }
+}
+
+.boxes .container {
+  margin: auto;
+  width: 85%;
+  padding-top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #ffffff;
+}
+
+.boxes .container .each-box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.boxes .container .each-box p {
+  margin: 51px 30px;
+}
+
+.current-students,
+.prospetive-students,
+.enquiries,
+.course-summary {
+  margin-bottom: 10px;
+  border-top: 1px solid #8a8383;
+}
+
+.current-students img,
+.prospetive-students img,
+.enquiries img,
+.course-summary img {
+  width: 50%;
+  padding-right: 10px;
+}
+
+.each-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.each-box img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.each-box a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #e8491d;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-decoration: none;
+  background-color: #ffffff;
+}
+
+.each-box a:hover {
+  color: #8a8383;
+  font-weight: bold;
+}
+
+.current-students {
+  margin-top: 10px;
+}
+
+.course-summary {
+  margin-bottom: 10px;
+}
+
+footer {
+  max-width: 100%;
+  background-color: #e8491d;
+  color: #ffffff;
+  background-color: #e8491d;
+  opacity: 0.7;
+  color: #ffffff;
+  bottom: 0;
+  width: 100%;
+  min-height: 9.4vh;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.75rem;
+  padding-top: 5px;
+}
+
+.footer-class {
+  width: 50%;
+  margin: 0 0 30px 10px;
+}
+
+.footer-class .footer-p {
+  text-align: left;
+}
+
+@media (min-width: 700px) {
+  .footer-class {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-class .address {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-right: 40px;
+  }
+}
+
+@media (min-width: 700px) and (min-width: 830px) {
+  .footer-class .address {
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: 700px) {
+  .footer-class .contact-nos {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+.find-us {
+  width: 100%;
+  top: -26px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.find-us p {
+  margin: 0 0 0 10px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.nav-button .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+html {
+  height: 100%;
+}
+
+html body {
+  height: 100%;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.student-cards {
+  margin: 0;
+  margin-left: 40px;
+}
+
+.top-bar {
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar h3 {
+  font-size: 20px;
+  width: 100%;
+}
+
+.logo-bar {
+  margin: 0;
+  padding: 0;
+}
+
+.student img {
+  margin: 0px;
+  position: static;
+}
+
+.student {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin: 10px;
+}
+
+.student div > ul > li:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.im {
+  color: #8a8383;
+}
+
+footer {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+footer .footer-p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.students-page-title {
+  max-width: 1024px;
+}
+
+@media (min-width: 960px) {
+  .students-grd {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px;
+  }
+}
+
+.contact-only-form {
+  margin: 3%;
+}
+
+.foot-wrap {
+  margin-left: -3%;
+}
+
+.card-box {
+  margin-top: 4%;
+  margin-left: 6%;
+  padding-bottom: 6%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 1499px) {
+  .card-box {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .card-box {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 828px) {
+  .card-box {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 748px) {
+  .card-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 6%;
+    margin-left: 0%;
+  }
+}
+
+.card-box h2 {
+  padding-bottom: 4%;
+}
+
+.card-box .card-body {
+  margin-bottom: 20%;
+  background-color: #dae0fb;
+  padding: 8%;
+  border-radius: 8%;
+  width: 340px;
+  height: 230px;
+}
+
+@media screen and (max-width: 828px) {
+  .card-box .card-body {
+    width: 308px;
+    height: 230px;
+  }
+}
+
+@media screen and (max-width: 748) {
+  .card-box .card-body {
+    width: 366px;
+    height: 233px;
+  }
+}
+
+.meta {
+  display: -ms-grid;
+  display: grid;
+  margin: 6%;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.meta .container {
+  width: 50%;
+  margin-bottom: 8%;
+}
+
+.meta .container h2 {
+  padding-bottom: 2%;
+}
+
+.meta .container .collapse {
+  word-wrap: break-word;
+}
+
+.c-box {
+  margin: 4%;
+  padding-bottom: 8%;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  min-width: 380px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  font-size: 16px;
+  position: relative;
+}
+
+body .main-body-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+main p {
+  font-size: small;
+}
+
+.current-stud-main-body a {
+  text-decoration: none;
+}
+
+.current-stud-main-body a li {
+  list-style: none;
+}
+/*# sourceMappingURL=styles.css.map */
